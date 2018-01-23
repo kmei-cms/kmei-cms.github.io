@@ -112,17 +112,17 @@ aside {
         background-color: transparent;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
-                color: white;
+                color: black;
             }
         }
         &.affix {
@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header.png');
     text-align: center;
     color: white;
     .header-content {
@@ -229,7 +229,6 @@ header {
     margin: 0 auto;
     .portfolio-box-caption {
         color: white;
-        opacity: 0;
         display: block;
         background: rgba( $theme-primary, .9 );
         position: absolute;
@@ -261,7 +260,6 @@ header {
     }
     &:hover {
         .portfolio-box-caption {
-            opacity: 1;
         }
     }
     @media (min-width: 768px) {
@@ -347,5 +345,26 @@ img::-moz-selection {
 
 body {
     -webkit-tap-highlight-color: $theme-dark;
+}
+
+div.scrollmenu {
+	background-color: $theme_lightgrey;
+	overflow: auto;
+	white-space: nowrap;
+	a {
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px;
+		text-decoration: none;
+		&:hover {
+			background-color: white;
+		}
+	}
+}
+
+img-circle {
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 50%;
 }
 
