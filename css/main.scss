@@ -34,14 +34,28 @@
 // }
 
 // variables.less
-$theme-primary: #F05F40;
+$theme-primary: #D3D3D3; //#F05F40; - this is the default orange
 $theme-dark: #222;
 $theme-lightgrey: #E5E5E5;
-$gray: grey;
+$yellow: #ff0;
 $black: #000;
+$silver: #c0c0c0;
+$white: #fff;
+$gray-200: #E5E5E5;
+$primary: #D3D3D3;
+$color_porcelain_approx: #edf3f3;
+$black_10: rgba(0,0,0,.1);
+$color_alto_approx: #ddd;
+$white: #fff;
+$black_20: rgba(0,0,0,.2);
+$black_40: rgba(0,0,0,.4);
+$color_tropical_blue_approx: #c3d8f5;
+$black_30: rgba(0,0,0,.3);
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
-        "base"
+        "base",
+		"contact"
 ;

@@ -1,0 +1,29 @@
+<section class="bg-primary" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">About Our Journey</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+  		<div class="mermaid">
+  			graph TB
+				A((Start Date: 2016))
+				B((Current Beta Testing: 2018))
+      			A -->|A lot of behind the scenes work| B
+				click A callbackA "It was a great beginning"
+				click B callbackB "Still going strong"
+  		</div>
+    </div>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js"></script>
+ 	<script>mermaid.initialize({startOnLoad:true});</script>
+	<script> var callbackA = function() {
+					alert('Started out as a brilliant idea between Jacqui and David');
+			}
+	</script>
+	<script> var callbackB = function() {
+					alert('Now there are 5 of us!');
+			}
+	</script>
+</section>
